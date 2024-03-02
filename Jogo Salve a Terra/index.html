@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset="UTF-8">
+        <title> Salve a Terra</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="estilo.css" rel="stylesheet">
+        <script src="jogo.js"> </script>
+    </head>
+    <body onload="iniciaJogo()">
+        <!-- Topo da Tela -->
+        <div class="Topo">
+            <table width="100%">
+                <tr>
+                    <td width="20%">
+                        <audio id="musica" controls autoplay> 
+                            <source src="musica.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+                    <td>
+                        <h1> Salve a Terra</h1>
+                    </td>
+                </tr>
+            </table>
+            </div>
+            <!-- Barra Lateral -->
+            <div id="barra_lateral" class="painelEsquerdo">
+            <table align="center">
+                <tr>
+                    <td>
+                        <img src="meteoro.png" width="50px">
+                    </td>
+                    <td>
+                        <span id="meteoros"> 10 </span>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <img src="explosao.png" width="50px">
+                    </td>
+                    <td>
+                        <span id="explosoes"> 0 </span>
+                    </td>
+                </tr>
+
+            </table>
+            <br>
+            <br>
+            <table >
+                <tr> 
+                    <td> 
+                       <img src="cronometro.png" width="50px" height="50px">
+                    </td>
+                    <td> 
+                        <span id="cronometro"> 15 </span>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+
+            <table align="center"> 
+                <tr>
+                    <td>
+                        <button class="btn btn-danger" onclick="start()">Start</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- Tela Principal -->
+        <div id="cenario" class="terra">
+
+        </div>
+    </body>
+</html>
